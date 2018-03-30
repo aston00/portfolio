@@ -1,0 +1,17 @@
+.Navitem {
+    align-self: stretch;
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid transparent;
+   font-size: 2rem;
+   padding: 0 1.5rem;
+   
+}
+.Navitem a:link, a:active, a:visited, a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.Navitem:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+

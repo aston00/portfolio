@@ -1,0 +1,12 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.Copyright {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333333;
+}

@@ -1,0 +1,29 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(140deg , #ffffff, rgba(236, 234, 234, 0.4) 50%, #ffffff);
+    z-index: 2;
+    box-shadow: 0  .3rem 1rem -.2rem #ccc;
+    margin-bottom: 1rem;
+}
+
+
+
+
+.logo {
+    height: 5rem;
+    width: 5rem;
+}
+
+.Msg {
+    margin-left: 18rem;
+    
+}
+
+.Msg h2{
+    font-size: 3rem;
+    color: var(--primary-color-dark);
+    letter-spacing: .3rem;
+    
+}

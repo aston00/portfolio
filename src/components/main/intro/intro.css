@@ -1,0 +1,31 @@
+.Intro {
+    background: url(../../../img/white.png) no-repeat ;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+   
+}
+
+.Inner {
+    font-size: 4rem;
+    width: 40rem;
+    /* margin: auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+}
+
+h1 {
+    letter-spacing: .7rem;
+    color: var(--primary-color);
+    font-weight: 400;    
+}
+
+p{
+    text-align: center;
+    margin-top: 4rem;
+    letter-spacing: .7rem;
+    color: var(--primary-color);
+}
+

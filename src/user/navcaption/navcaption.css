@@ -1,0 +1,54 @@
+.User {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-bottom: 2px solid var(--primary-color);
+    
+}
+
+
+.User img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding-left: .3rem;
+}
+
+.User h3 {
+    
+    font-size: 1.8rem;
+    padding: 0 .3rem 0 .5rem;
+    color:var(--primary-color);
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.Svg {
+    height: 3rem;
+    width: 3rem;
+    fill: var(--primary-color);
+    cursor: pointer;
+    transition: all .4s;
+    transform: rotateY(0);
+    margin-left: .4rem;
+    
+}
+
+.Svg:hover {
+    /* transform: rotateZ(30deg); */
+    transform: perspective(1000px) scaleX(1.4) rotateY(25deg);
+
+       
+}
+
+.Svg:active {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.UserContainer {
+    display: flex;
+    align-items: center;
+   
+}
