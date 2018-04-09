@@ -5,11 +5,11 @@ import MyFancyComponent from '../../components/googlemap/googlemap';
 class Contacts extends Component {
     state = {
         contacts: [
-            {name: 'icon-gmail', link: 'jacksterwow@gmail.com', descr: 'jacksterwow@gmail.com'},
+            {name: 'icon-gmail', link: 'javascript:void(0)', descr: 'jacksterwow@gmail.com'},
             {name: 'icon-facebook', link: 'https://www.facebook.com/profile.php?id=100016243895480', descr: 'Facebook' },
             {name: 'icon-linkedin', link: 'https://www.linkedin.com/in/anatolii-yatsenko-7398bb159/',descr: 'Linkedin'},
-            {name: 'icon-skype', link:'#', descr: 'aston00'},
-            {name: 'icon-viber', link: '#', descr: '097-98-87-809'},
+            {name: 'icon-skype', link:'javascript:void(0)', descr: 'aston00'},
+            {name: 'icon-viber', link: 'javascript:void(0)', descr: '097-98-87-809'},
         ]
     }
 
@@ -28,17 +28,20 @@ class Contacts extends Component {
                     {/* AIzaSyBgmLguscHtsFiIM5ZEefXij7kdJixGOa0 */}
                     
                 </div>
-                <div>
-                    <a className={classes.Link} href={svgItem.link} target="_blank">{svgItem.descr}</a>
+                <div className={classes.LinkContainer}>
+                {svgItem.link !== '#' ? 
+                <a className={classes.Link} href={svgItem.link} target="_blank">{svgItem.descr}</a> : 
+                <a className={classes.Link} href={svgItem.link} >{svgItem.descr}</a>
+                }
                 </div>
             </li>
             )
         });
         return(
             <div className={classes.SectionContainer}>
-                <div className={classes.Header}>
+                {/* <div className={classes.Header}>
                     <h1>My Contacts</h1>
-                </div>
+                </div> */}
 
                 <div className={classes.ListContainer}>
                     <ul className={classes.List}>

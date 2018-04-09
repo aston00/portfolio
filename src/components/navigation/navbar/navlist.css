@@ -1,6 +1,6 @@
 .List {
     list-style: none;
-    align-self: stretch;
+    /* align-self: stretch; */
     flex-direction: row;
     display: flex;
     justify-content: center;

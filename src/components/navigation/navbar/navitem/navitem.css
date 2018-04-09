@@ -1,17 +1,26 @@
 .Navitem {
-    align-self: stretch;
+    /* align-self: stretch; */
    display: flex;
    align-items: center;
-   border-bottom: 2px solid transparent;
-   font-size: 2rem;
-   padding: 0 1.5rem;
-   
+   padding: 0 1rem;
 }
-.Navitem a:link, a:active, a:visited, a:hover {
+.Navitem a {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    border-bottom: 2px solid transparent;
+}
+.Navitem a.active {
+        height: 100%;
+        border-bottom: 2px solid var(--primary-color);
+}
+
+.Navitem a:link, .Navitem a:visited, .Navitem a:hover {
     text-decoration: none;
     color: var(--primary-color);
+
 }
-.Navitem:hover {
+.Navitem a:hover, .Navitem a:active {
     border-bottom: 2px solid var(--primary-color);
 }
+
 

@@ -1,15 +1,20 @@
 .SectionContainer {
-    background: linear-gradient(to bottom, white, #fafafa);
+    background: linear-gradient(to bottom, #eee, #fafafa);
+    padding-bottom: 15rem;
 }
-.ExperienceHeading{
+
+.ExperienceHeading {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ExperienceHeading > h1 {
+.ExperienceHeading>h1 {
     font-size: 7rem;
-    padding: 5rem 0 ;
+    padding: 5rem 0;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: .3rem;
 }
 
 .row {
@@ -23,19 +28,19 @@
 }
 
 .card {
-    margin-top: 3rem;
+    margin-top: 4rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 40rem;
     flex-basis: 27%;
-    
     /* box-shadow: 0 1rem 4rem #ccc; */
 }
 
-.card:not(:nth-last-of-type(3n+0)){
+.card:not(:nth-last-of-type(3n+0)) {
     margin-right: calc((100% - 81%)/2);
 }
+
 .card__side {
     border: 1px solid #ccc;
     height: 40rem;
@@ -45,10 +50,11 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    border-radius:  3px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 2.5rem 4rem rgba(0 0 0, .15);
 }
+
 .card__side__front {
     background-color: white;
     box-shadow: 0 .3rem 1rem #ccc;
@@ -57,7 +63,6 @@
 .card__side__back {
     transform: rotateY(180deg);
     box-shadow: 0 .3rem 1rem #ccc;
-    
 }
 
 .card__side__back_1 {
@@ -67,13 +72,12 @@
 .card:hover .card__side__front {
     transform: rotateY(-180deg);
 }
-    
+
 .card:hover .card__side__back {
     transform: rotateY(0);
 }
 
 .card__picture {
-    
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -86,7 +90,7 @@
 
 .card__picture__1 {
     /* background-image: linear-gradient(to right bottom, green,  blue) ,url(../img/nat-5.jpg); */
-    background-image: linear-gradient(to right bottom, green,  blue) ;
+    background-image: linear-gradient(to right bottom, green, blue);
 }
 
 .university {
@@ -104,7 +108,6 @@
 .Programming {
     background-image: url('../../img/Programming.jpg');
 }
-
 
 .card__heading {
     font-size: 2.5rem;
@@ -129,27 +132,28 @@
 
 .card__heading_span__1 {
     background-image: linear-gradient(to right bottom, rgba(200 200 200, .85), rgba(100 100 100, .85));
-    
 }
 
 .card__details {
     padding: 3rem;
 }
-.card__details ul{
+
+.card__details ul {
     list-style: none;
     width: 80%;
     margin: 0 auto;
 }
-.card__details ul li{
+
+.card__details ul li {
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
 }
-                
+
 .card__details ul li:not(:last-child) {
     border-bottom: 1px solid #eee;
 }
-           
+
 .card__cta {
     position: absolute;
     top: 50%;
@@ -157,7 +161,7 @@
     transform: translate(-50%, -50%);
     width: 90%;
     height: 100%;
-    text-align: center; 
+    text-align: center;
 }
 
 .card__price_box {
@@ -179,7 +183,7 @@
     margin-top: 7rem;
 }
 
-.card__position > p{
+.card__position>p {
     color: #fafafa;
     letter-spacing: .3rem;
 }
