@@ -9,7 +9,8 @@ class Contacts extends Component {
             {name: 'icon-facebook', link: 'https://www.facebook.com/profile.php?id=100016243895480', descr: 'Facebook' },
             {name: 'icon-linkedin', link: 'https://www.linkedin.com/in/anatolii-yatsenko-7398bb159/',descr: 'Linkedin'},
             {name: 'icon-skype', link:'javascript:void(0)', descr: 'aston00'},
-            {name: 'icon-viber', link: 'javascript:void(0)', descr: '097-98-87-809'},
+            {name: 'icon-github', link:'https://github.com/aston00', descr: 'Github'}
+            // {name: 'icon-viber', link: 'javascript:void(0)', descr: '097-98-87-809'},
         ]
     }
 
