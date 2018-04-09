@@ -1,0 +1,60 @@
+.SectionContainer {
+    margin-bottom: 5rem;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.Header > h1 {
+    font-size: 7rem;
+}
+.ListContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.List {
+   
+    
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    list-style: none;
+}
+.ListItem {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 15rem;
+    max-width: 15rem;
+    height: 15rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+
+
+.Svg {
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+.Link {
+    font-size: 2rem;
+}
+
+.Map {
+    width: 70%;
+    margin: 10rem auto 0 auto;
+    border: 2px solid grey;
+}

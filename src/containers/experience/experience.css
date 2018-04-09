@@ -1,19 +1,44 @@
+.SectionContainer {
+    background: linear-gradient(to bottom, white, #fafafa);
+}
+.ExperienceHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ExperienceHeading > h1 {
+    font-size: 7rem;
+    padding: 5rem 0 ;
+}
 
 .row {
-    max-width: 114rem;
+    /* max-width: 114rem; */
+    padding: 0 25rem;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .card {
+    margin-top: 3rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 52rem;
-    flex-basis: 30%;
+    height: 40rem;
+    flex-basis: 27%;
+    
+    /* box-shadow: 0 1rem 4rem #ccc; */
+}
+
+.card:not(:nth-last-of-type(3n+0)){
+    margin-right: calc((100% - 81%)/2);
 }
 .card__side {
-    height: 52rem;
+    border: 1px solid #ccc;
+    height: 40rem;
     transition: all .8s ease;
     position: absolute;
     top: 0;
@@ -22,25 +47,21 @@
     backface-visibility: hidden;
     border-radius:  3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0 0 0, .15);
+    box-shadow: 0 2.5rem 4rem rgba(0 0 0, .15);
 }
 .card__side__front {
     background-color: white;
+    box-shadow: 0 .3rem 1rem #ccc;
 }
 
 .card__side__back {
     transform: rotateY(180deg);
+    box-shadow: 0 .3rem 1rem #ccc;
+    
 }
 
 .card__side__back_1 {
-    background-image: linear-gradient(to right bottom, green,  blue);
-}
-.card__side__back_2 {
-    background-image: linear-gradient(to right bottom, green,  blue);
-}
-
-.card__side__back_3 {
-    background-image: linear-gradient(to right bottom, green,  blue);
+    background-image: linear-gradient(to right bottom, rgba(16, 178, 123, 1), rgba(30, 191, 255, 1));
 }
 
 .card:hover .card__side__front {
@@ -52,6 +73,7 @@
 }
 
 .card__picture {
+    
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -66,24 +88,36 @@
     /* background-image: linear-gradient(to right bottom, green,  blue) ,url(../img/nat-5.jpg); */
     background-image: linear-gradient(to right bottom, green,  blue) ;
 }
-        
-.card__picture__2 {
-    background-image: linear-gradient(to right bottom, green,  blue) ;
+
+.university {
+    background-image: url('../../img/university.jpg');
 }
-.card__picture__3 {
-    background-image: linear-gradient(to right bottom, green,  blue) ;
+
+.Finance {
+    background-image: url('../../img/Finance.jpg');
 }
+
+.Law {
+    background-image: url('../../img/Law.jpg');
+}
+
+.Programming {
+    background-image: url('../../img/Programming.jpg');
+}
+
 
 .card__heading {
     font-size: 2.5rem;
     font-weight: 300;
     text-transform: uppercase;
-    text-align: right;
-    color: white;
-    position: absolute;
+    /* text-align: right; */
+    text-align: center;
+    color: #333333;
+    /* position: absolute;
     top: 12rem;
-    right: 2rem;
-    width: 65%;
+    right: 2rem; */
+    margin-top: 3.5rem;
+    width: 100%;
     z-index: 10;
 }
 
@@ -94,14 +128,6 @@
 }
 
 .card__heading_span__1 {
-    background-image: linear-gradient(to right bottom, rgba(200 200 200, .85), rgba(100 100 100, .85));
-    
-}
-.card__heading_span__2 {
-    background-image: linear-gradient(to right bottom, rgba(200 200 200, .85), rgba(100 100 100, .85));
-    
-}
-.card__heading_span__3 {
     background-image: linear-gradient(to right bottom, rgba(200 200 200, .85), rgba(100 100 100, .85));
     
 }
@@ -130,21 +156,41 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    height: 100%;
     text-align: center; 
 }
 
 .card__price_box {
     text-align: center;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+    height: 100%;
 }
 
-.card__price_only {
-    font-size: 1.4rem;
+.card__position {
+    font-size: 3rem;
+    color: #fafafa;
     text-transform: uppercase;
+    margin-top: 7rem;
+}
+
+.card__position > p{
+    color: #fafafa;
+    letter-spacing: .3rem;
+}
+
+.Status {
+    color: #fafafa;
+    font-size: 2rem;
 }
 
 .card__price_value {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: 100;
+    color: #fafafa;
 }
